@@ -6,7 +6,6 @@
     display:flex;
     flex-direction:column;
     justify-content: flex-start;
-    
 }
 hr{
     margin: 0px;
@@ -37,7 +36,6 @@ h1{
         text-align: center;
     }
 }
-
 @media (min-width: 1920px){
     .bayan{
         width: 1920px;
@@ -54,13 +52,11 @@ h1{
         text-align: center;
     }
 }
-
 .mem{
     position: absolute;
     z-index: -1;
     opacity: 0;
 }
-
 .pic{
     text-align: center;
     max-width: 280px;
@@ -70,7 +66,6 @@ h1{
     opacity: 0;
     transition: 1s all;
 }
-
 label{
     margin:0;
     cursor: pointer;
@@ -80,21 +75,17 @@ label{
     color: blue;
     opacity: 1;
 }
-
-
 label:hover .pic{
     display: block;
     height: auto;
     width: auto;
     opacity: 1;
 }
-
 .bayan:hover label,
 .bayan:hover .btn{
     color: black;
     opacity: 1;
 }
-
 .brick:active .pic{
     opacity: 0.3;
 }
@@ -109,7 +100,6 @@ label:hover .pic{
 .memName{
     display: flex;
     justify-content: space-between;
-    
 }
 .mem:checked + .brick img{
     display: block;
@@ -117,7 +107,6 @@ label:hover .pic{
     width: auto;
     opacity: 1;
 }
-
 .mem:checked + .brick > .memName > .btn,
 .mem:hover + .brick > .memName > .btn{
     transform: rotate(45deg);
