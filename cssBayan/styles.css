@@ -1,0 +1,128 @@
+.bayan{
+    width: 280px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: white;
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    
+}
+hr{
+    margin: 0px;
+}
+h1{
+    font-size: 18px;
+    max-width: 280px;
+    margin: 10px auto;
+    text-align: center;
+}
+.bayan{
+    font-size: 14px;
+    font-weight: 600;
+}
+@media (min-width: 820px){
+    .bayan{
+        width: 820px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .pic{
+        max-width: 780px;
+    }
+    h1{
+        font-size: 28px;
+        max-width: 820px;
+        margin: 20px auto;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1920px){
+    .bayan{
+        width: 1920px;
+        font-size: 30px;
+        font-weight: 800;
+    }
+    .pic{
+        max-width: 1920px;
+    }
+    h1{
+        font-size: 48px;
+        max-width: 1920px;
+        margin: 40px auto;
+        text-align: center;
+    }
+}
+
+.mem{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.pic{
+    text-align: center;
+    max-width: 280px;
+    margin: 0 auto;
+    display: block;
+    height: 0px;
+    opacity: 0;
+    transition: 1s all;
+}
+
+label{
+    margin:0;
+    cursor: pointer;
+    border: none;
+    display: block;
+    padding: 5px;
+    color: blue;
+    opacity: 1;
+}
+
+
+label:hover .pic{
+    display: block;
+    height: auto;
+    width: auto;
+    opacity: 1;
+}
+
+.bayan:hover label,
+.bayan:hover .btn{
+    color: black;
+    opacity: 1;
+}
+
+.brick:active .pic{
+    opacity: 0.3;
+}
+.brick:active > .memName{
+    color:blue;
+    opacity: 0.5;
+}
+.btn{
+    opacity: 0;
+    transition: 1s all;
+}
+.memName{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.mem:checked + .brick img{
+    display: block;
+    height: auto;
+    width: auto;
+    opacity: 1;
+}
+
+.mem:checked + .brick > .memName > .btn,
+.mem:hover + .brick > .memName > .btn{
+    transform: rotate(45deg);
+  }
+.mem:checked + .brick,
+.mem:checked + .brick > .memName > .btn {
+    color: black;
+}
