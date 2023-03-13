@@ -43,6 +43,7 @@ h1{
         width: auto;
         opacity: 1;
     }
+    
     .bayan:hover label,
     .bayan:hover .btn{
         color: black;
